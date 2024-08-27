@@ -1,12 +1,12 @@
 # htmlgen
-tool for generating html from lisp code. 
-used for natalieee.net.
-built around https://gist.github.com/markasoftware/ab357f1b967b3f656d026e33fec3bc0e
+tool for generating html from lisp code.<br> 
+used for natalieee.net.<br>
+built around https://gist.github.com/markasoftware/ab357f1b967b3f656d026e33fec3bc0e<br>
 
 ## useage
-templates/: used for templates
-src/: documents in lisp 
-out/: where html will be written
+templates/: used for templates<br>
+src/: documents in lisp <br>
+out/: where html will be written<br>
 
 to compile, run `{clisp,sbcl} gen.lisp`
 
