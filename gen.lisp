@@ -2,7 +2,7 @@
 
 (load "html.lisp")
 (load "exec.lisp")
-(load "templates/page.lsp")
+(load "templates/page.lisp")
 
 (ql:quickload "uiop")
 

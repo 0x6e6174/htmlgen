@@ -1,0 +1,13 @@
+(defun html () 
+  (page "blogosphere" 
+        `((section () 
+                   (h1 () "my subunit of the blogosphere")
+                   "I do not know if I will use this, but I was bored and thus have made a blog system")
+          (section ()
+                   (h2 () "posts")
+                   (table () 
+                          (tbody () 
+                                 (tr () (th () (p () "title")) (th () (p () "editted")) (th () (p () "posted")) (th () (p () "size")))
+                                 (tr () (th (:colspan 4) (hr)))
+                                 ,(exec-command "for file in $(ls ./site/html/blog/posts --time=creation); do echo \"<tr><td><a href=\\\"/html/blog/posts/$file\\\">$file</a></td><td>$(stat -c %y site/html/blog/posts/$file | head -c 16)</td><td><p>$(stat -c %y site/html/blog/posts/$file | head -c 10)</p></td><td align=\\\"right\\\">$(numfmt --to=iec --suffix=B $(stat -c %s \"site/html/blog/posts/$file\"))</td></tr>\"; done | sed 's/\\\/\\\//\\\//g'")
+                                 (tr () (th (:colspan 4)))))))))
