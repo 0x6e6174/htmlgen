@@ -1,3 +1,11 @@
+(defun join-strings-with-br (strings)
+  (reduce (lambda (acc str)
+            (if (string= acc "")
+                str
+                (concatenate 'string acc "<br>" str)))
+          strings
+          :initial-value ""))
+
 (defun html ()
   (page "site info" 
         `((section () 
@@ -40,6 +48,23 @@
                    (p () "sludge also has the ability to apply arbitrary edits to outgoing data prior to said data being sent, but after it has been generated. "
                       "you may observe this "
                       (a (:href "?uwu=true") "here") "."))
+          (section () 
+                   (h2 () "webocodynamics of natalieee.net")
+                   "the means by which this website runs involves an unreasonable number of symlinks. here is a textual description of a graph of them:"
+                   (code () 
+                        ,(join-strings-with-br '(
+                                                 "site -> s&#x200B;ludge [label=s&#x200B;ludge]"
+                                                 "s&#x200B;ludge -> site [label=site]"
+                                                 "htmlgen -> site [label=out]"
+                                                 "htmlgen -> site [label=site]"
+                                                 )))
+                   "you may ask: why?"
+                   (br)(br)
+                   "the answer to such a question is that sludge runs with a working directory of \~/site, but scripts in \~/site/scripts must be able to import files from \~/sludge (specifically \~/site/scripts/include). "
+                   "htmlgen needs to be able to read scripts in \~/site/scripts to run commands at compile time. htmlgen writes html to \~/htmlgen/out, thus the double symlink to \~/site. "
+                   "technically, this could all be done without symlinks. this is vaguely more robust because in the event that I move something, I simply need to change the symlinks instead of the paths in arbitrarily many files. "
+                   "nevertheless, the number of symlinks is amusing. "
+                   (footnote () "nevertheless is a stupid word"))
           (section ()
                    (h2 () "/.*\\.natalieee.net/")
                    (ul ()
