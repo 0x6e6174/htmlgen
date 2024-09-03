@@ -2,6 +2,7 @@
   (page "blogosphere" 
         `((section () 
                    (h1 () "my subunit of the blogosphere")
+                   (h2 () "this is currently broken because I am a fool")
                    "I do not know if I will use this, but I was bored and thus have made a blog system")
           (section ()
                    (h2 () "posts")
