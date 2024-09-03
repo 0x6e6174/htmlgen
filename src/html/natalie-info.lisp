@@ -34,7 +34,7 @@
                                   (ul () 
                                       (li () "I own 12 thinkpads, all of which were manufactured prior to 2014")
                                       (li () "the number of people that can effectively use my computer is, to my knowledge, 1 (me)")
-                                      (li () "I can replace the screen on my first generation iphonen se a1662 in 70 seconds")))
+                                      (li () "I can replace the screen on my first generation iphone se a1662 in 70 seconds")))
                          (section () 
                                   (h2 () "contact information")
                                   (a (:href "/html/discord.html") "discord: _natalieeee_")
