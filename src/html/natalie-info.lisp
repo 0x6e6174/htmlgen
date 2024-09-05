@@ -6,7 +6,7 @@
                                      "despite this, I shall attempt a suitable description of myself.")
                                   (br)
                                   "ideally, I am to be referred to as an \"it\" or a \"she\". the former is preferred to some degree. I suppose I may reasonably be described as asexual. " (br)
-                                  "timezone I am in: " ,(exec-command "date '+%Z (UTC%z)'") (br)
+                                  "timezone I am in: " ,(exec-command "TZ=\"America/Los_Angeles\" date '+%Z (UTC%z)'") (br)
                                   "age: $[echo $(( $(date +%s) - $(date -d \"2007-04-01\" +%s) ))] seconds. that is $[echo \"scale=8; ($(date +%s) - $(date -d '2007-04-01' +%s)) / (365.25*24*3600)\" | bc] [earth] years." (br)
                                   "I am kind of a college student. it is complicated. I will be a college student with less complicated circumstances by fall of 2025, barring unforseen circumstances." (br)
                                   "I like systems. particularly ones that have reasonably consistent behavior based on a set of rules. this is omnipresent in my interests." (br)
