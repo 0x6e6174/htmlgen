@@ -25,7 +25,7 @@
                       "the colors of both the light and dark mode are based off of the colorscheme of my laptop.")
                    (p () 
                       "the html for this website is generated using <a href=\"https://git.natalieee.net/nat/htmlgen\">htmlgen</a>."
-                      "if you are curious as to why, please see the posts from 2024-08-21 and 2024-09-01 <a href=\"/html/random-thoughts.html\">here</a>.))
+                      "if you are curious as to why, please see the posts from 2024-08-21 and 2024-09-01 <a href=\"/html/random-thoughts.html\">here</a>."))
           (section ()
                    (h2 () "sludge")
                    (h3 () "what is a sludge?")
