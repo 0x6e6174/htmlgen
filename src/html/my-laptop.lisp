@@ -8,12 +8,13 @@
                    "this is not due to lack of technical ability, but instead due to the accumulation of unreasonable quirks over time in every computer I exert any degree of control over.")
           (section ()
                    (h2 () "booting and the operating system")
-                   (p () "I do not use a bootloader. "
+                   (p () "I do not use a bootloader." ,(exec-command "make-footnote \"I find them to be very annoying and in my experience unreliable\"")
                       "instead, I have a custom kernel build based off the arch kernel with filesystem and compression drivers such that I can boot straight from my kernel. "
                       "I also do not have an initramfs.")
                    (p () "technically, I don't use arch linux. "
                       "I use [a custom build of] the arch kernel and arch package repos, but actually run artix. "
-                      "a function of this is that instead of systemd, I use openrc."))
+                      "a function of this is that instead of systemd, I use openrc.")
+                   ,(exec-command "put-footnotes"))
           (section ()
                    (h2 () "seat management and hardware issue mitigation")
                    (p () "I once thought it would be entertaining to remove elogind from my system. "
@@ -44,8 +45,7 @@ cat /proc/acpi/button/lid/LID0/state | grep open && (modprobe i2c_hid_acpi) || (
                       "this is unfortunate because it is bad software (this will be elaborated upon), but I like the special workspace system. "
                       "my status bar and notification system are written in gjs with ags. I resent this because it involves javascript, but oh well. "
                       "when libastal gets documentation, I will probably rewrite my ui in that. "
-                      "my terminal emulator is my own build of st. "
-                      "I have yet to find a good terminal that supports all the things I want for wayland, so xwayland it is."))
+                      "my terminal emulator is foot because foot does not implement unecessary features."))
           (section ()
                    (h2 () "keyboard")
                    (p () "unlike my previous laptop, I had the option to buy this laptop such that it came with a blank keyboard. "
@@ -59,11 +59,13 @@ cat /proc/acpi/button/lid/LID0/state | grep open && (modprobe i2c_hid_acpi) || (
                    (ul ()
                        (li () "killing firefox kills my compositor what I would estimate to be 20% of the time")
                        (li () "killing firefox causes my headphones to disconnect what I would estimate to be 40% of the time")
+                       (li () "setting firefox to be a floating window causes my entire computer to freeze roughly 10% of the time" ,(exec-command "make-footnote \"I should probably make new firefox profiles. my current firefox profile is haunted, as I have been using it since 7th grade.\""))
                        (li () "no audio devices other than my headphones are recognized after boot until I run "
                           (pre () "unfuck audio"))
-                       (li () "when displaying https://wiki.gnuradio.org/index.php/Embedded_Python_Block in any web browser, or a screenshot of this webpage fullscreen on my laptop in any wayland compositor, my screen starts flickering. it only occures with this page. unplugging my computer causes the flickering to reduce in frequency. this will not occur if my mouse pointer is not in the top 2/5ths of the screen.")
+                       (li () "when displaying https://wiki.gnuradio.org/index.php/Embedded_Python_Block in any web browser, or a screenshot of this webpage fullscreen on my laptop in any wayland compositor, my screen starts flickering. it only occures with this page. unplugging my computer causes the flickering to reduce in frequency. this will not occur if my mouse pointer is not in the top 2/5ths of the screen." ,(exec-command "make-footnote \"what on earth\""))
                        (li () "closing my computer causes network manager to become inoperable. it does not crash, it just stops working.")
                        (li () "closing my computer causes firefox to be unable to retrieve data regardless of if network manager is working")
-                       (li () "sometimes, pipewire ceases to function. this typically happens after several days of uptime."))))))
+                       (li () "sometimes, pipewire ceases to function. this typically happens after several days of uptime."))
+                   ,(exec-command "put-footnotes")))))
 
 

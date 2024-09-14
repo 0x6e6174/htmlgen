@@ -11,10 +11,10 @@
                                            (text-column () 
                                                         (h2 () "why do I have a server from my school's basement?")
                                                         (p () 
-                                                           "at the time, my school was at a temporary campus while our regular campus is being remodelled."
-                                                           "I hope this means there will be less lead in the water when they are done, but given how the district is, who knows."
-                                                           "The current campus is notably smaller than the regular campus, thus a large amount of things are in storage."
-                                                           "The man who is in charge of the storage and moving stored items back to the new campus does not like moving items."
+                                                           "at the time, my school was at a temporary campus while our regular campus is being remodelled. "
+                                                           "I hope this means there will be less lead in the water when they are done, but given how the district is, who knows. "
+                                                           "The current campus is notably smaller than the regular campus, thus a large amount of things are in storage ."
+                                                           "The man who is in charge of the storage and moving stored items back to the new campus does not like moving items. "
                                                            "For this reason, when I ask him to let me in to the school's basement to just take random cool things, he says yes.")
                                                         (h2 () "it is kind of horrible that I have this server")
                                                         (p () 

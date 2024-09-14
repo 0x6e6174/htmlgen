@@ -1,5 +1,6 @@
 (defun header () 
-  '(header () 
+  `(header ()
+           ,(exec-command "echo > /tmp/footnote_count")
            (nav () 
                 (ul ()
                     (li () 
