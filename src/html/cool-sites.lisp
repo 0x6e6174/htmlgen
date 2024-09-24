@@ -60,7 +60,7 @@
                                               (img (:style "float: right" :src "../files/88x31/bunbun.dev.gif"))))
                                           (span ()
                                             "odette: " 
-                                            (a (:href "http://puppygirl.systems") "puppygirl.systems")
+                                            (a (:href "http://puppygirl.systems") "puppygirl.systems (stupid idiot who types &lt;hr/&gt;)")
                                             " Semi functional now")
                                           (span ()
                                             "albert: " 
