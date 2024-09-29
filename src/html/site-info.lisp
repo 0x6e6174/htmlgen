@@ -79,5 +79,6 @@
                    (ul ()
                        (li () ,(exec-command "make-link https://git.natalieee.net") ": Gitea instance. You may use it if you feel so inclined for some reason. I wouldn't.")
                        (li () "dns.natalieee.net" ": Pointless CNAME record to my main domain so that entities using my dns (A number greater than 0!) can put dns.natalieee.net down as their nameserver instead of natalieee.net.")
-                       (li () "mpd.natalieee.net: mpd server that my friend asked me to create. I can probably be bothered in to giving arbitrary people credentials if they for some reason wish to listen to the music that I listen to in such a roundabout way"))))))
+                       (li () "mpd.natalieee.net: mpd server that my friend asked me to create. I can probably be bothered in to giving arbitrary people credentials if they for some reason wish to listen to the music that I listen to in such a roundabout way")
+                       (li () ,(exec-command "make-link https://files.natalieee.net") ": a slightly worse and personal 0x0.st-like server. created because I was annoyed by discord's upload limit."))))))
 
