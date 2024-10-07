@@ -1,7 +1,7 @@
 (defun html () 
   (page "natalie info" `((section () 
                                   (h1 () "what is a \"natalie\"?")
-                                  (span () "I am <a href='/html/natalie-sightings.html'>natalie</a>. obviously.")
+                                  (span () "I am <a href='/html/natalie-sightings.html'>natalie</a>",(exec-command "make-footnote 'the natalie is provided \"as is\", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, title and non-infringement. in no event shall the copyright holders or anyone distributing the natalie be liable for any damages or other liability, whether in contract, tort or otherwise, arising from, out of or in connection with the natalie or the use or other dealings in the natalie.'")". obviously.")
                                   (p () "words are not a thing I am good at. this is exacerbaited when the words are about myself. "
                                      "despite this, I shall attempt a suitable description of myself.")
                                   (br)
