@@ -1,9 +1,9 @@
 (defun html () 
   (page "blogosphere" 
         `((section () 
-                   (h1 () "my subunit of the blogosphere")
-                   (h2 () "this is currently broken because I am a fool")
-                   "I do not know if I will use this, but I was bored and thus have made a blog system")
+                   (h1 () "natalie's subunit of the blogosphere")
+                   (h2 () "this is currently broken because it is a fool")
+                   "it does not know if it will use this, but it was bored and thus have made a blog system")
           (section ()
                    (h2 () "posts")
                    (table () 
