@@ -1,21 +1,21 @@
 (defun html () 
   (page "home" `((section () 
                           (p () 
-                             "I'm natalie[ee]"
+                             "this thing is known as natalie[ee]"
                              (br)
                              "$[find files/homepage-statements/* | shuf -n1 | xargs -I % cat %]"
                              (br)
-                             "I am not sure what I am going to use this site for, it only exists because I was <del>procrastinating my calculus homework</del> bored one day"
+                             "it is not sure what it is going to use this site for, said website only exists because it was <del>procrastinating its calculus homework</del> bored one day"
                              (br)
                              "website homepage visit-counter: $[echo visit >> files/home_visit_counter; cat files/home_visit_counter | wc -l]"
                              (br)
                              (br)
-                             "if you are here, I am rather curious as to why. I encourage you to use the post arbitrary data section of this page to tell me how you found my site."))
+                             "if you are here, it is rather curious as to why. it encourages you to use the post arbitrary data section of this page to tell me how you found this site."))
                  (section () 
                           (h2 () "particularly notable pages")
                           (a (:href "/html/site-info.html") "information about this website")
                           (a (:href "/html/natalie-info.html") "information about this natalie")
-                          (a (:href "/html/blog/index.html") "there is a blog. I do not frequently use it.")
+                          (a (:href "/html/blog/index.html") "there is a [currently broken] blog. it does not frequently use it.")
                           (a (:href "/html/random-thoughts.html") "arbitrary natalie thoughts. they are interesting, sometimes")
                           (a (:href "/html/cool-sites.html") "other webloci"))
                  (section () 
@@ -35,7 +35,7 @@
                           (span () ,(exec-command "for file in ./files/88x31/*; do (file -i \"$file\" | grep -qE 'image/') && echo \"<img src=\\\"$file\\\" width=88 height=31/>\" || cat \"$file\"; done | shuf")))
                  (section () 
                           (h2 () "post arbitrary data to be displayed here")
-                          "yes, I do sanitize this" (a (:href "/html/albert-hack-1.html") "<del>(No you don't --sanitization tester)</del>") "yes I do")
+                          "yes, it does sanitize this" (a (:href "/html/albert-hack-1.html") "<del>(No you don't --sanitization tester)</del>") "yes, it does")
                  (section (:class "ignore-section") 
                           (form (:action "#" :method "post")
                                 (label (:for "text") "post text:")
