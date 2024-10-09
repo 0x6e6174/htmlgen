@@ -10,7 +10,7 @@
                              "website homepage visit-counter: $[echo visit >> files/home_visit_counter; cat files/home_visit_counter | wc -l]"
                              (br)
                              (br)
-                             "if you are here, it is rather curious as to why. it encourages you to use the post arbitrary data section of this page to tell me how you found this site."))
+                             "if you are here, it is rather curious as to why. it encourages you to use the post arbitrary data section of this page to tell it how you found this site."))
                  (section () 
                           (h2 () "particularly notable pages")
                           (a (:href "/html/site-info.html") "information about this website")
