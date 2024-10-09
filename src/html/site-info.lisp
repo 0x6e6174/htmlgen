@@ -13,25 +13,25 @@
           (section ()
                    (h2 () "/(.*\\.)?natalieee.net/")
                    (h3 () "why?")
-                   (p () "I was displeased with my former status of not having a website")
+                   (p () "natalie was displeased with its former status of not having a website")
                    (h3 () "how?")
-                   (p () "requests to /(.*\\.)?natalieee.net/ get routed to nginx, which acts as a proxy for my subdomains. "
+                   (p () "requests to /(.*\\.)?natalieee.net/ get routed to nginx, which acts as a proxy for various subdomains. "
                       "nginx routes requests to /^natalieee.net/ to this webserver, which is named "
                       (a (:href "https://git.natalieee.net/nat/sludge") "sludge") ". "
                       "requests to /.*\\.natalieee.net/ are routed according to the /.*\\.natalieee.net/ section."))
           (section ()
                    (h2 () "/^natalieee.net/")
                    (p () "the root domain of this website, which you are currently observing, is running sludge. "
-                      "the colors of both the light and dark mode are based off of the colorscheme of my laptop.")
+                      "the colors of both the light and dark mode are based off of the colorscheme of this one's laptop.")
                    (p () 
                       "the html for this website is generated using <a href=\"https://git.natalieee.net/nat/htmlgen\">htmlgen</a>."
                       "if you are curious as to why, please see the posts from 2024-08-21 and 2024-09-01 <a href=\"/html/random-thoughts.html\">here</a>."))
           (section ()
                    (h2 () "sludge")
                    (h3 () "what is a sludge?")
-                   (p () "s[ite][k]ludge is my from-scratch webserver. it has features.")
+                   (p () "s[ite][k]ludge is natalie's from-scratch webserver. it has features.")
                    (h3 () "why?")
-                   (p () "I dislike \"web development\". also, I was bored.")
+                   (p () "it dislikes \"web development\". also, it was bored.")
                    (h3 () "what does sludge do?")
                    (ul ()
                       (li () "send data")
@@ -66,19 +66,19 @@
                                                      "htmlgen -> site [label=out]"
                                                      "htmlgen -> site [label=site]"))))
                    (p ()
-                      "you may ask: why?"
+                      "one may ask: why?"
                       (br) (br)
                       "the answer to such a question is that sludge runs with a working directory of ~/site, but scripts in ~/site/scripts must be able to import files from ~/sludge (specifically ~/site/scripts/include). "
                       "htmlgen needs to be able to read scripts in ~/site/scripts to run commands at compile time. htmlgen writes html to ~/htmlgen/out, thus the double symlink to ~/site. "
-                      "technically, this could all be done without symlinks. this is vaguely more robust because in the event that I move something, I simply need to change the symlinks instead of the paths in arbitrarily many files. "
+                      "technically, this could all be done without symlinks. this is vaguely more robust because in the event that natalie moves something, it simply need to change the symlinks instead of the paths in arbitrarily many files. "
                       "nevertheless" ,(exec-command "make-footnote \"nevertheless is a stupid work\"") ", the number of symlinks is amusing.")
                    ,(exec-command "put-footnotes"))
 
           (section ()
                    (h2 () "/.*\\.natalieee.net/")
                    (ul ()
-                       (li () ,(exec-command "make-link https://git.natalieee.net") ": Gitea instance. You may use it if you feel so inclined for some reason. I wouldn't.")
-                       (li () "dns.natalieee.net" ": Pointless CNAME record to my main domain so that entities using my dns (A number greater than 0!) can put dns.natalieee.net down as their nameserver instead of natalieee.net.")
-                       (li () "mpd.natalieee.net: mpd server that my friend asked me to create. I can probably be bothered in to giving arbitrary people credentials if they for some reason wish to listen to the music that I listen to in such a roundabout way")
-                       (li () ,(exec-command "make-link https://files.natalieee.net") ": a slightly worse and personal 0x0.st-like server. created because I was annoyed by discord's upload limit."))))))
+                       (li () ,(exec-command "make-link https://git.natalieee.net") ": Gitea instance. You may use it if you feel so inclined for some reason. it vaguely advises against this.")
+                       (li () "dns.natalieee.net" ": Pointless CNAME record to its main domain so that entities using its dns (once a number greater than 0!) can put dns.natalieee.net down as their nameserver instead of natalieee.net.")
+                       (li () "mpd.natalieee.net: mpd server that its friend asked it to create. it can probably be bothered in to giving arbitrary people credentials if they for some reason wish to listen to the music that it is listening to in such a roundabout way")
+                       (li () ,(exec-command "make-link https://files.natalieee.net") ": a slightly worse and personal 0x0.st-like server. created because it was annoyed by discord's upload limit."))))))
 
