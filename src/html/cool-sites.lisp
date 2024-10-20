@@ -60,7 +60,7 @@
                                             (a (:href "http://puppygirl.systems") "puppygirl.systems (stupid idiot who types &lt;hr/&gt;)")
                                             " Semi functional now")
                                           (span ()
-                                            "albert: " 
+                                            "unnamed friend entity: " 
                                             (a (:href "https://iso-9995-9.com") "iso-9995-9.com")
                                             " (down? dns issue maybe)")
                                           (span ()

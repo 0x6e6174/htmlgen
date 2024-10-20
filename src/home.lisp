@@ -35,7 +35,7 @@
                           (span () ,(exec-command "for file in ./files/88x31/*; do (file -i \"$file\" | grep -qE 'image/') && echo \"<img src=\\\"$file\\\" width=88 height=31/>\" || cat \"$file\"; done | shuf")))
                  (section () 
                           (h2 () "post arbitrary data to be displayed here")
-                          "yes, it does sanitize this" (a (:href "/html/albert-hack-1.html") "<del>(No you don't --sanitization tester)</del>") "yes, it does")
+                          "yes, it does sanitize this" (a (:href "/html/unnamed-friend-entity-hack-1.html") "<del>(No you don't --sanitization tester)</del>") "yes, it does")
                  (section (:class "ignore-section") 
                           (form (:action "#" :method "post")
                                 (label (:for "text") "post text:")
